@@ -17,11 +17,12 @@ export default function CharacterCard(props) {
 
 }
 
-    const attemptRef = useRef(props.attempt);
-    ...
+/*    const attemptRef = useRef(props.attempt);
+    //...
     useEffect(() => {
         if(attemptRef.current != props.attempt){
             setActive(false)
             attemptRef.current = props.attempt
     }
-})
+})*/
+
