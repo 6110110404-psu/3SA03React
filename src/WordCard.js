@@ -87,17 +87,18 @@ export default class WordCard extends Component {
                 this.setState({guess: [], complete: true})
                 document.getElementById('result').innerHTML = `Congratulations!`
                 document.getElementById('newgame').style.display = "inline-block";
-                document.getElementById('end').style.display = "none";
+                //document.getElementById('end').style.display = "none";
                 
             }else{
+                document.getElementById('result').innerHTML = `ํYOU DIE!`
                 console.log('Mistake Word: '+guess.join('').toString())
-                this.setState({guess: [], attempt: this.state.attempt + 1})
-                document.getElementById('result').innerHTML = `Attempt Or Try Again: ${this.state.attempt} `
+                /*this.setState({guess: [], attempt: this.state.attempt + 1})
+                document.getElementById('result').innerHTML = `Attempt Or Try Again: ${this.state.attempt} `*/
             }
-            if(this.state.attempt == 3){
+            /*if(this.state.attempt == 3){
                 document.getElementById('result').innerHTML = `Game Over!`
                 setTimeout(() => window.location.reload(false),3000)
-            }
+            }*/
         }
     }
     render() {
