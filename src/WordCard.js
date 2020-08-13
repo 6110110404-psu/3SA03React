@@ -51,11 +51,11 @@ import React, { Component } from 'react';
 import CharacterCard from "./CharacterCard";
 import _ from 'lodash';
 
-const word = ['eat' , 'glad' , 'hello' , 'studio' , 'ability' , 'computer' ]; 
+const word = ['star' , 'glad' , 'hello' , 'studio' , 'ability' , 'computer' ]; 
 
 const prepareStateFromWord = (given_word) => {
     let word = given_word.toUpperCase()
-    let chars = _.shuffle(Array.from(word)) 
+    let chars = _.shuffle(Array.from(word))    
     return { 
          word, 
          chars, 
@@ -67,8 +67,10 @@ const prepareStateFromWord = (given_word) => {
 
 export default class WordCard extends Component {
     constructor(props){
+        
         super(props)
-        this.state = prepareStateFromWord(word[0])
+        var random = Math.floor(Math.random() * word.length);
+        this.state = prepareStateFromWord(word[random])
     }
     activationHandler = (c) =>{
         let guess = [...this.state.guess, c.toUpperCase()]

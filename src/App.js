@@ -74,5 +74,3 @@ class App extends Component {
 export default App;
 
 //กดรีเซ็ตไม่ได้
-//ตรง mistakeword ยังผิด
-//ศัพท์ยังไม่สุ่ม
