@@ -79,7 +79,7 @@ export default class WordCard extends Component {
         this.setState({guess})
 
         if(guess.length == this.state.chars.length){
-            console.log('Mistake Word: '+guess.join('').toString())
+            
             console.log('Correct Word: '+this.state.word)
             if(guess.join('').toString() == this.state.word){
                 this.setState({guess: [], complete: true})
@@ -88,6 +88,7 @@ export default class WordCard extends Component {
                 document.getElementById('end').style.display = "none";
                 
             }else{
+                console.log('Mistake Word: '+guess.join('').toString())
                 this.setState({guess: [], attempt: this.state.attempt + 1})
                 document.getElementById('result').innerHTML = `Attempt Or Try Again: ${this.state.attempt} `
             }

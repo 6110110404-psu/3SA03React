@@ -102,7 +102,7 @@ body {
 }
 
 body {
-  background-color: lightblue;
+  background-color: white;
 }
 
 @keyframes App-logo-spin {
@@ -114,6 +114,6 @@ body {
   }
 }
 
-#welcome{
+/*#welcome{
   background-color:red; 
-}
+}*/

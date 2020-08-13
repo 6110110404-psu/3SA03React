@@ -54,7 +54,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 id="welcome">Welcome to CardGame with React!</h1>
+        <h1 id="welcome">WordCard & CardGame with React!</h1>
        
         <div id="main">
             <h2 id="your-answer"></h2>
@@ -67,10 +67,12 @@ class App extends Component {
         </div>
         <button id= "newgame" className="button" onClick={this.newgame}>NEW GAME</button>
         
-        
       </div>
     );
   }
 }
 export default App;
 
+//กดรีเซ็ตไม่ได้
+//ตรง mistakeword ยังผิด
+//ศัพท์ยังไม่สุ่ม
