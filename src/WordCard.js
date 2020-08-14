@@ -17,8 +17,7 @@ const prepareStateFromWord = (given_word) => {
 }
 
 export default class WordCard extends Component {
-    constructor(props){
-        
+    constructor(props){    
         super(props)
         var random = Math.floor(Math.random() * word.length);
         this.state = prepareStateFromWord(word[random])
